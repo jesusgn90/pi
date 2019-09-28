@@ -14,7 +14,12 @@ pi = circumference / diameter
 
 ## How to use
 
-Usage: `node ./pi.js [ diameter ]`
+```sh
+$ sudo npm install -g typescript@latest
+$ npm install
+$ npm run build
+$ node ./pi.js <diameter>
+```
 
 * **`diameter`**: Diameter of the circumference. Default: 100000
 
@@ -22,10 +27,18 @@ The larger the diameter, the better the accuracy.
 
 ## Example
 
-```
-node ./pi.js 1000000000
+```sh
+$ node ./dist/pi.js 1000000000
 Pi (calculated) = 3.1415926535954846
 Pi (predefined) = 3.1415926535897931
      difference = 0.0000000000056914
 
+```
+
+## Tests
+
+```sh
+$ sudo npm install -g typescript@latest
+$ npm install
+$ npm test
 ```
